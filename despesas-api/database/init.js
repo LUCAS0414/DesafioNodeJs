@@ -1,7 +1,7 @@
 const sqlite3 = require("sqlite3").verbose();
 
 // Criar e configurar o banco de dados
-const db = new sqlite3.Database("database/despesas.db");
+const db = new sqlite3.Database("./database/despesas.db");
 
 // Criação das tabelas
 db.serialize(() => {

@@ -1,0 +1,23 @@
+<form action="/api/despesas" method="POST">
+  <label>Valor:</label>
+  <input type="number" step="0.01" name="valor" required />
+  <label>Data:</label>
+  <input type="date" name="data_compra" required />
+  <label>Descrição:</label>
+  <input type="text" name="descricao" required />
+  <label>Tipo de Pagamento:</label>
+  <select name="tipo_pagamento_id">
+    <option value="1">Dinheiro</option>
+    <option value="2">Débito</option>
+    <option value="3">Crédito</option>
+    <option value="4">PIX</option>
+  </select>
+  <label>Categoria:</label>
+  <select name="categoria_id">
+    <option value="1">Alimentação</option>
+    <option value="2">Transporte</option>
+    <option value="3">Saúde</option>
+    <option value="4">Outros</option>
+  </select>
+  <button type="submit">Cadastrar</button>
+</form>
